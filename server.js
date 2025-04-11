@@ -55,6 +55,7 @@ if (result.error) {
 
 // Database ----------------------------------------------------------------
 let db;
+
 if (process.env.CLOUDANT_USERNAME !== undefined)  {
   db = require('./lib/db-cloudant')(process.env);
 } else if (process.env.SCALINGO_MONGO_URL !== undefined) {
