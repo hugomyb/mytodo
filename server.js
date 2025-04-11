@@ -61,7 +61,7 @@ if (process.env.CLOUDANT_USERNAME !== undefined)  {
 } else if (process.env.SCALINGO_MONGO_URL !== undefined) {
   db = require('./lib/db-mongo')({ SCALINGO_MONGO_URL: process.env.SCALINGO_MONGO_URL });
 } else {
-  db = require('./lib/in-memory')();
+  // db = require('./lib/in-memory')();
 }
 console.log('Using', db.type());
 
