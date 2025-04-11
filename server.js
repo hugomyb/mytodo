@@ -10,6 +10,7 @@ if (!process.env.PORT) process.env.PORT = 8080;
 
 // load local VCAP configuration
 let vcapLocal = null
+
 try {
   vcapLocal = require('./vcap-local.json');
   console.log("Loaded local VCAP", vcapLocal);
